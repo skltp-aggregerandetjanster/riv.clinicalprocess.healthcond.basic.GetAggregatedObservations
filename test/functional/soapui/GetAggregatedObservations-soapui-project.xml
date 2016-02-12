@@ -1084,8 +1084,8 @@ declare namespace tk='urn:riv:interoperability:headers:1';
 count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="ee253c9c-a98e-4e28-8459-4dd29da9f241"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1';
 declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 count(/soap:Envelope/soap:Body/ns2:GetObservationsResponse/ns2:observationGroup)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="observationsGroup" id="4d2ed4b6-788a-4289-8fdc-7ca6ddbd2395"><con:configuration><path>count(//*:observationGroup)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1:GetObservations"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetObservations - Tolvan Tolvansson - Systemadressering" id="49eb1e1a-4315-44e1-abd5-e2fe36388e60"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetObservationsResponderBinding</con:interface><con:operation>GetObservations</con:operation><con:request name="GetObservations - Tolvan Tolvansson - Systemadressering" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="62604f11-f9bc-4f6a-ad36-692799154a87"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="TEST"/>
   &lt;con:entry key="x-vp-sender-id" value="TEST"/>
+  &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="TEST"/>
   &lt;con:entry key="x-skltp-correlation-id" value=""/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
@@ -1149,11 +1149,7 @@ count(/soap:Envelope/soap:Body/ns2:GetObservationsResponse/ns2:observationGroup)
             <!--You may enter ANY elements at this point-->
          </urn1:careUnitId>
          <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root>1.2.752.129.2.1.4.1</urn2:root>
-            <urn2:extension>HSA-ID-4</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
+         <urn1:sourceSystemHSAId>HSA-ID-4</urn1:sourceSystemHSAId>
          <!--You may enter ANY elements at this point-->
       </urn1:GetObservations>
    </soapenv:Body>
@@ -1650,8 +1646,8 @@ declare namespace tk='urn:riv:interoperability:headers:1';
 count(/soap:Envelope/soap:Header/tk:ProcessingStatus/tk:ProcessingStatusList)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" name="Response count" id="aebb41a6-eb53-486e-a4f0-98803cf39d6d"><con:configuration><path>declare namespace ns2='urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1';
 declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
 count(/soap:Envelope/soap:Body/ns2:GetObservationsResponse/ns2:observationGroup)</path><content>3</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:username xsi:nil="true"/><con:password xsi:nil="true"/><con:domain xsi:nil="true"/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1:GetObservations"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="GetObservations - Tolvan Tolvansson - Systemadressering" id="3ac8ea52-3088-45ca-89ba-34fb885d1c63"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>GetObservationsResponderBinding</con:interface><con:operation>GetObservations</con:operation><con:request name="GetObservations - Tolvan Tolvansson - Systemadressering" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="6cbef12b-acc1-475e-ad82-5584be59b6e2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
-  &lt;con:entry key="x-vp-sender-id" value="TEST"/>
   &lt;con:entry key="x-rivta-original-serviceconsumer-hsaid" value="TEST"/>
+  &lt;con:entry key="x-vp-sender-id" value="TEST"/>
 &lt;/xml-fragment></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>${#TestSuite#agg-env}</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:riv:itintegration:registry:1" xmlns:urn1="urn:riv:clinicalprocess:healthcond:basic:GetObservationsResponder:1" xmlns:urn2="urn:riv:clinicalprocess:healthcond:basic:1">
    <soapenv:Header>
       <urn:LogicalAddress>5565594230</urn:LogicalAddress>
@@ -1714,11 +1710,7 @@ count(/soap:Envelope/soap:Body/ns2:GetObservationsResponse/ns2:observationGroup)
             <!--You may enter ANY elements at this point-->
          </urn1:careUnitId>
          <!--Optional:-->
-         <urn1:sourceSystemId>
-            <urn2:root>1.2.752.129.2.1.4.1</urn2:root>
-            <urn2:extension>HSA-ID-4</urn2:extension>
-            <!--You may enter ANY elements at this point-->
-         </urn1:sourceSystemId>
+         <urn1:sourceSystemHSAId>HSA-ID-4</urn1:sourceSystemHSAId>
          <!--You may enter ANY elements at this point-->
       </urn1:GetObservations>
    </soapenv:Body>
